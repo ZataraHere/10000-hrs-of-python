@@ -60,7 +60,7 @@ class NewsApp:
         description.config(font=('verdana',15))
 
         frame = Frame(self.root, background='white')
-        frame.pack(expand=True, fill=BOTH)
+        frame.pack(expand=True, fill=BOTH, side=BOTTOM, pady=10)
 
         if index != 0:
 
