@@ -10,4 +10,4 @@ def sum_of_squares():
 
      return sum
 
-sum_of_squares()
+print("Sum of squares of three numbers is:",sum_of_squares())
