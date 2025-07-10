@@ -30,7 +30,7 @@ class Menu:
     def cm_to_ft(self):
         cm = float(input("Enter the value in cm: "))
         ft = cm * 0.0328
-        print(ft)
+        print(f"{cm} cm is {ft:.2f} feet.")
 
     def km_to_miles(self):
         km = float(input("Enter the value in km: "))
