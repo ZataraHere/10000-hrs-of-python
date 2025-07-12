@@ -8,4 +8,4 @@ def sum_of_n(n):
 
     return sum
 
-print(" sum of n numbers:", sum_of_n(10))
+print(" sum of n numbers:", sum_of_n(100))
