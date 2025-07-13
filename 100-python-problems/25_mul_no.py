@@ -2,8 +2,8 @@
 import math
 def mul():
 
-    num1 = float(input("Enter first no.: "))
-    num2 = float(input("Enter second no.: "))
+    num1 = int(input("Enter first no.: "))
+    num2 = int(input("Enter second no.: "))
 
     output = 0
 
