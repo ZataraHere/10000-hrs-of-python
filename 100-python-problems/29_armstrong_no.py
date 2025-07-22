@@ -1,19 +1,23 @@
 #	Print all the armstrong numbers in the range of 100 to 1000
 
-def armstrong():
+def armstrong(num):
 
-    num = input("Enter a number: ")
-    pow = len(num)
+    dup = num
+    cnt = 0
+    L = []
     sum = 0
+    while num>0:
+        lastdigit = num%10
+        cnt += 1
+        num = num//10
+        L.append(lastdigit)
+    for i in L:
+        sum += i**cnt
 
-    for i in num:
-
-        sum += int(i)**pow
-    if sum == int(num):
-        print("Its a armstrong number")
-
+    if sum == dup:
+        return True
     else:
-        print("Its not a armstrong number")    
-
-armstrong()
+        return False
+        
+print(armstrong(1634))
 
