@@ -9,11 +9,16 @@ Output: true
 Explanation: 121 reads as 121 from left to right and from right to left.'''
 
 def isPalindrome(x):
-    x = str(x)
-
-    if x == x[::-1]:
+    num = x
+    rev = 0
+    while num>0:
+        last_digit = num%10
+        rev = rev*10 + last_digit
+        num = num//10
+    if rev == x:
         return True
     else:
         return False
-x = input("Enter a number or a name: ")
+        
+x = int(input("Enter a number or a name: "))
 print(isPalindrome(x))
